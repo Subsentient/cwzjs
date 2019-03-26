@@ -86,18 +86,18 @@ struct CWZJS_STRUCTURE
 {
 	struct CWZJS_BASE_OBJECT base;
 
-    double health;
-    int *range;
-    int status;
-    int cost;
-    int stattype;
-    int *capacity;
-    bool isCB : 1;
-    bool isSensor : 1;
-    bool canHitAir : 1;
-    bool canHitGround : 1;
-    bool hasIndirect : 1;
-    bool isRadarDetector : 1;
+	double health;
+	int *range;
+	int status;
+	int cost;
+	int stattype;
+	int *capacity;
+	bool isCB : 1;
+	bool isSensor : 1;
+	bool canHitAir : 1;
+	bool canHitGround : 1;
+	bool hasIndirect : 1;
+	bool isRadarDetector : 1;
 
 };
 
