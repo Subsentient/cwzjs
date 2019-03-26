@@ -40,6 +40,8 @@ struct CWZJS_BASE_OBJECT
 	
 struct CWZJS_FEATURE
 {
+	struct CWZJS_BASE_OBJECT base;
+
 	int health;
 	int stattype;
 	bool damageable;
@@ -57,19 +59,12 @@ struct CWZJS_WEAPON
 	
 struct CWZJS_DROID
 {
+	struct CWZJS_BASE_OBJECT base;
+	
 	struct CWZJS_WEAPON *weapons;
-	const char *name;
 	const char *body;
 	const char *propulsion;
 	double health;
-	int id;
-	int x, y, z; //Coordinates
-	int player;
-	int armour;
-	int thermal;
-	int type;
-	int selected;
-	int born;
 	int *group;
 	int action;
 	int *range;
@@ -89,6 +84,8 @@ struct CWZJS_DROID
 };
 struct CWZJS_STRUCTURE
 {
+	struct CWZJS_BASE_OBJECT base;
+
     double health;
     int *range;
     int status;
