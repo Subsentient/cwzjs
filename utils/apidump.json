@@ -1,0 +1,7 @@
+{
+    "AI": {
+        "js": "apidump.js",
+        "name": "WZ API dumper",
+        "tip": "CWZJS JavaScript API dumper utility"
+    }
+}
